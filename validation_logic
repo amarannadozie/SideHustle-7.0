@@ -1,0 +1,15 @@
+<?php
+$voterHasPVC = True;
+$voterAge = 18;
+$voterWard = "020";
+
+if (!$voterHasPVC) {
+    echo "No PVC";
+} else if ($voterAge < 18) {
+    echo "Voter is below 18";
+} else if ($voterWard != "020") {
+    echo "Voter's ward is not 020";
+} else {
+    echo "Voter eligible to vote";
+}
+?>
